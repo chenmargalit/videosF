@@ -1,0 +1,138 @@
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-row-gap: 2em;
+  grid-column-gap: 20px;
+}
+
+.video {
+  width: 200px;
+}
+
+.menu {
+  background-color: #282828;
+  grid-row: 1 / span 5;
+  min-height: 45em;
+}
+
+.image-style {
+  margin-top: 30px;
+  width: 226px;
+  height: 282px;
+  border-radius: 25px;
+}
+
+.mini-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  justify-items: center;
+}
+
+.link {
+  color: white;
+  font-size: 18px;
+  padding: 6px 20px;
+  line-height: 30px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.link-div {
+  padding: 10px 0px;
+}
+
+.link-selected {
+  background-color: #09bba6;
+  width: 100%;
+}
+
+.h3-mints {
+  color: white;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.videos-div {
+  margin-top: 20px;
+  width: 226;
+  height: 282px;
+  -webkit-box-shadow: 14px -11px 18px -3px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 14px -11px 18px -3px rgba(0, 0, 0, 0.65);
+  box-shadow: 14px -11px 18px -3px rgba(0, 0, 0, 0.65);
+}
+
+.header {
+  margin-top: 3px;
+  margin-right: 15px;
+  border-bottom: solid #b5bfbf;
+  border-top: solid #b5bfbf;
+}
+
+.brownBox {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.show-more-button {
+  width: 10em;
+  height: 3em;
+  background-color: transparent;
+  justify-self: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.show-more-button:hover {
+  background-color: #09bba6;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2em;
+    grid-column-gap: 20px;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2em;
+    grid-column-gap: 20px;
+  }
+  .mini-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2em;
+    grid-column-gap: 20px;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2em;
+    grid-column-gap: 20px;
+  }
+  .mini-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2em;
+    grid-column-gap: 20px;
+  }
+  .menu {
+    display: none;
+  }
+}
